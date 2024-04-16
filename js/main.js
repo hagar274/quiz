@@ -36,57 +36,57 @@ let questions = [
         ]
     },
     {
-        question: "ghdtf",
+        question: "ما هو الاسم العالمي لمدينة نيويورك؟",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "بابوا نيو غينيا", correct: false},
+            {text: "جوقام", correct: true},
+            {text: "كيريباتي", correct: false},
+            {text: "ميكرونيزيا", correct: false},
         ]
     },
     {
-        question: "ghdtf",
+        question: "متي تم افتتاح مترو لندن؟",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "1862", correct: false},
+            {text: "1863", correct: true},
+            {text: "1888", correct: false},
+            {text: "1860", correct: false},
         ]
     },
     {
-        question: "ghdtf",
+        question: "متي تم نشر العدل الاول من مجلة فوغ؟",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "1960", correct: false},
+            {text: "1892", correct: true},
+            {text: "2000", correct: false},
+            {text: "1860", correct: false},
         ]
     },
     {
-        question: "ghdtf",
+        question: "كم عدد المفاتيح في بيانو كلاسيكي؟ ",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "99", correct: false},
+            {text: "88", correct: true},
+            {text: "77", correct: false},
+            {text: "66", correct: false},
         ]
     },
     {
-        question: "ghdtf",
+        question: "ما هو الحيوان الوطني لاستراليا؟",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "الدب القطبي", correct: false},
+            {text: "الكنغر الاحمر", correct: true},
+            {text: "الباندا", correct: false},
+            {text: "البطريق", correct: false},
         ]
     },
     {
-        question: "ghdtf",
+        question: "كم يستغرف دوران الارض حول الشمس؟",
         answers: [
-            {text: "sg", correct: false},
-            {text: "jhg", correct: true},
-            {text: "kk", correct: false},
-            {text: "jj", correct: false},
+            {text: "360 يوم", correct: false},
+            {text: "365 يوم", correct: true},
+            {text: "350 يوم", correct: false},
+            {text: "370 يوم", correct: false},
         ]
     }
 ];
