@@ -13,7 +13,7 @@ body{
     background-attachment: fixed;
 }
 .app{
-    background-color: #2adaf6;
+    background-color: #199eb25d;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -46,8 +46,8 @@ body{
     /* margin: 0; */
 }
 .btn{
-    background-color: #2adaf6;
-    color: #1a6f96;
+    background-color: #199eb25d;
+    color: #054867;
     font-weight: 500;
     width: 100%;
     border: 1px solid #efc8ec;

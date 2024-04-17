@@ -21,16 +21,16 @@ let questions = [
         question: "كم عدد الشرائط في علم الولايات المتحدة الامريكية؟",
         answers: [
             {text: "12", correct: false},
-            {text: "13", correct: true},
             {text: "15", correct: false},
             {text: "20", correct: false},
+            {text: "13", correct: true},
         ]
     },
     {
         question: "ما اصغر دولة في العالم؟",
         answers: [
-            {text: "انترماتيكا", correct: false},
             {text: "الفاتيكان", correct: true},
+            {text: "انترماتيكا", correct: false},
             {text: "فيجي", correct: false},
             {text: "كندا", correct: false},
         ]
@@ -47,8 +47,8 @@ let questions = [
     {
         question: "متي تم افتتاح مترو لندن؟",
         answers: [
-            {text: "1862", correct: false},
             {text: "1863", correct: true},
+            {text: "1862", correct: false},
             {text: "1888", correct: false},
             {text: "1860", correct: false},
         ]
@@ -57,8 +57,8 @@ let questions = [
         question: "متي تم نشر العدل الاول من مجلة فوغ؟",
         answers: [
             {text: "1960", correct: false},
-            {text: "1892", correct: true},
             {text: "2000", correct: false},
+            {text: "1892", correct: true},
             {text: "1860", correct: false},
         ]
     },
@@ -66,8 +66,8 @@ let questions = [
         question: "كم عدد المفاتيح في بيانو كلاسيكي؟ ",
         answers: [
             {text: "99", correct: false},
-            {text: "88", correct: true},
             {text: "77", correct: false},
+            {text: "88", correct: true},
             {text: "66", correct: false},
         ]
     },
@@ -75,9 +75,9 @@ let questions = [
         question: "ما هو الحيوان الوطني لاستراليا؟",
         answers: [
             {text: "الدب القطبي", correct: false},
-            {text: "الكنغر الاحمر", correct: true},
             {text: "الباندا", correct: false},
             {text: "البطريق", correct: false},
+            {text: "الكنغر الاحمر", correct: true},
         ]
     },
     {
@@ -92,7 +92,7 @@ let questions = [
 ];
 
 let questionElement = document.getElementById("question");
-let answerButton = document.getElementById("answer_buttons");
+let answerButtons = document.getElementById("answer_buttons");
 let nextButton = document.getElementById("next-btn"); 
 
 let currentQuestionIndex = 0;
@@ -115,7 +115,7 @@ function showQuestion(){
         let button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
-        answerButton.appendChild(button);
+        answerButtons.appendChild(button);
 
         if(answer.correct){
             button.dataset.correct = answer.correct; 
@@ -126,9 +126,9 @@ function showQuestion(){
 
 function resetState(){
     nextButton.style.display = "none";
-while(answerButton.firstChild){
-    answerButton.removeChild(answerButton.firstChild);
-}
+    while(answerButtons.firstChild){
+    answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
 
 function selectAnswer(e){
@@ -141,7 +141,7 @@ function selectAnswer(e){
     else{
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButton.children).forEach(button =>{
+    Array.from(answerButtons.children).forEach(button =>{
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }
@@ -153,7 +153,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `You Score ${score} out of ${questions.lenght}!`;
+    questionElement.innerHTML = `You Score ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "play Again";
     nextButton.style.display = "block"
 }
@@ -168,7 +168,7 @@ function handleNextButton(){
     }
 }
 nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.lenght){
+    if(currentQuestionIndex < questions.length){
         handleNextButton();
     }
     else{
